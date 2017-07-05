@@ -1,0 +1,342 @@
+html, body {
+  height: 100%;
+}
+body {
+    color: #666;
+    font-family: sans-serif;
+    background-color: #fff;
+}
+header {
+  position: relative;
+    background: #fff url(../images/caffe-latte_006.jpg) no-repeat;
+    background-position:center -20px;
+    vertical-align: bottom;
+    background-size:160% auto;
+    height: 50px;
+}
+header h1 {
+    display: none;
+}
+header p {
+    position: absolute;
+    top:40%;
+    left: 0;
+    right: 0;
+    margin:auto;
+    width:90%;
+}
+header {
+    height:  640px;
+    margin-top:  3rem;
+}
+
+.btn {
+    position: absolute;
+    top: 84%;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+    width: 70%;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    text-align: center;
+    font-size: 1.3rem;
+    border: 0.14rem solid #000;
+}
+.btn a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+}
+.btn a:hover {
+    background-color: rgba(255,255,255,.5);
+}
+
+article {
+    padding: 3%;
+}
+article section {
+    margin-bottom: 1.4rem;
+}
+article h2 {
+    text-align: center;
+    font-size: 1.2rem;
+    background-color:  #4c3422;
+    color:#fff;
+    margin-bottom: 0.6rem;
+}
+article section h3 {
+    color:  #666;
+    font-size: 1.2rem;
+    margin-bottom: 1.7rem;
+}
+
+article h3 {
+    color:#d9bbb1;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+
+}
+
+article section figure {
+    padding:1.4rem 3rem;
+}
+
+article h6{
+  font-size:  12.8px;
+  text-align:  center;
+  margin-top: 0.5rem;
+  margin-bottom:  0.5rem;
+}
+
+#contactus {
+    background-color: #4c3422;
+    color: #fff;
+    padding: 3%;
+}
+#contactus p {
+    margin-bottom: 0.6rem;
+}
+#contactus h2 {
+    color: #d9bbb1;
+}
+#contactus table {
+    width: 96%;
+    margin:0 auto;
+}
+#contactus th {
+    width: 35%;
+    text-align: right;
+    font-size: 0.7rem;
+    font-weight: normal;
+    padding-top: 0.3rem;
+}
+#contactus td {
+    width: 65%;
+    padding-bottom: 0.5rem;
+    vertical-align: top;
+}
+textarea {
+    height: 10rem;
+}
+input[type="text"] {
+    height: 1.5rem;
+}
+input[type="text"], textarea {
+    width: 100%;
+    box-sizing:border-box;
+    border-style: none;
+}
+input[type="submit"] {
+    width: 30%;
+    line-height: 1.6rem;
+    height: 1.6rem;
+    padding-left: 0.6rem;
+    background-color:   #d9bbb1;
+    color: #000;
+    font-size: 0.8rem;
+    letter-spacing: 1rem;
+    border: 1px solid ;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color:#4c3422;
+    color: #fff;
+    overflow: hidden;
+    padding-top: 1rem;
+}
+
+footer small {
+    display: block;
+    padding: 1rem;
+    font-size: 0.8rem;
+    clear: both;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+p {
+    font-size: 0.8rem;
+    line-height: 1.7;
+}
+section {
+    margin-bottom: 1.4rem;
+}
+h2 {
+    text-align: center;
+    font-size: 1.2rem;
+    color:    #4c3422;
+    margin-bottom: 0.6rem;
+    line-height: 1.5;
+}
+
+aside section {
+  padding: 3%;
+  margin-bottom: 0;
+  text-align: center;
+}
+aside h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  color:    #4c3422;
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+  text-shadow:0.1rem 0.1rem 0 rgba(246, 188, 188, 0.8);
+}
+
+.access {
+  position: relative;
+  padding-bottom: 60%;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+h2 {
+    text-align: center;
+    background-color: : #4c3422;
+    color:  #fff;
+    margin-bottom: 0.6rem;
+    line-height: 1.5;
+}
+
+.access iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 0;
+  height: 100%;
+}
+
+#gototop {
+  z-index: 20000;
+  position: fixed;
+  bottom: 2%;
+  right: 3%;
+}
+#gototop a {
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 3.4rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  background: #6c4a31;
+  font-size: 2rem;
+  text-decoration: none;
+}
+#gototop a:hover {
+  background: rgba(182, 135, 120, 0.7);
+}
+
+
+nav {
+    position: fixed;
+    height: 5rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 200;
+}
+nav h2 {
+    position: absolute;
+    top:1rem;
+    left: 0.3rem;
+    width: 50%;
+}
+
+#sns {
+    z-index: 200;
+    position: absolute;
+    width: 13rem;
+    top: 1.4rem;
+    left: 50%;
+    overflow: hidden;
+}
+#sns li {
+    float: left;
+    margin-right: 0.3rem;
+}
+#sns li a {
+    display: block;
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+#drawer ul {
+  z-index: 300;
+  width: 100%;
+  position: fixed;
+  padding-top: 3rem;
+  background-color: rgba(161, 97, 76,.2);
+  cursor: pointer;
+  margin-left: -100%;
+  transition-property:all;
+  transition-duration: 0.6s;
+}
+#drawer li {
+  background-color: rgba(161, 97, 76, .2);
+  margin-bottom: 0.3rem;
+}
+#drawer li a {
+    display: block;
+    height: 5rem;
+    line-height: 5rem;
+    color: #fff;
+    font-size: 1.4rem;
+    text-align: center;
+    text-decoration: none;
+    text-shadow:0.1rem 0.1rem 0 #BB1310;
+}
+header{
+  margin-top:  5rem;
+}
+
+#open {
+  position: fixed;
+  z-index: 400;
+  top:0;
+  right: 0;
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  display: block;
+  text-align: center;
+  background:#fff;
+  color: #4b4949;
+  font-size: 2rem;
+  border:none;
+  cursor: pointer;
+  border-radius:  30%;
+}
+
+#drawer .showMenue {
+  margin-left: 0%;
+}
+
+
+img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+#About section p {
+  display: none;
+}
+
+
+
+form table td span {
+  display: block;
+  font-size: 0.8rem;
+  color: yellow;
+  margin-top: 0.4rem;
+  text-align: right;
+}

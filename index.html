@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Shibu Cafe</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://use.fontawesome.com/76e30daf79.js"></script>
+</head>
+<body>
+ <header>
+   <h1><Shibu Cafe</h1>
+ </header>
+ <nav>
+ <button id="open">&#926;</button>
+  <ul id="sns">
+    <li><a href=""><img src="images/facebook.svg" alt="facebook"></a></li>
+    <li><a href=""><img src="images/twitter.svg" alt="twitter"></a></li>
+  </ul>
+   <h2><a href=""><img src="images/Shibu Cafe logo.svg" alt="Shibu Cafe"></h2>
+   <div id="drawer">
+       <ul>
+         <li><a href="#About">About</a></li>
+         <li><a href="#Menu">Menu</a></li>
+         <li><a href="#access">access</a></li>
+         <li><a href="#contactus">contactus</a></li>
+      </ul>
+   </div>
+ </nav>
+<main>
+  <article id="About">
+    <div id="About"><img src="images/interior_001.jpg" alt="About"></div>
+    <h2>About</h2>
+    <p>道玄坂を登ったところにあるカフェレストラン。豆は全てフェアトレード。バリスタが淹れるコーヒーを楽しみながら、ゆっくり過ごせる空間をご用意しております。</p>
+
+
+   <article id="Menu"></article>
+      <h2>Menu</h2>
+      <h3>Drink</h3>
+        <div id="Menu"><img src="images/caffe-latte_001.jpg" alt="Menu"class="close"></div>
+        <h6>カフェラテ　　500円</h6>
+        <div id="Menu"><img src="images/cafe-au-lait_001.jpg"alt="Menu"class="close"></div>
+        <h6>カフェオレ　　500円</h6>
+        <div id="Menu"><img src="images/espresso-compana_001.jpg"alt="Menu"class="close"></div>
+        <h6>エスプレッソコンパナ　　600円</h6>
+
+        <h3>Dessert</h3>
+        <div id="Menu"><img src="images/fruits-cake_001.jpg "alt="Menu"class="close"></div>
+        <h6>フルーツケーキ　　450円</h6>
+        <div id="Menu"><img src="images/chiffon-cake_001.jpg"alt="Menu"class="close"></div>
+        <h6>シフォンケーキ　　450円</h6>
+      <div id="Menu"><img src="images/fruits-plate_001.jpg"alt="Menu"class="close"></div>
+      <h6>フルーツプレート　　500円</h6>
+    </article>
+    <section id="contactus">
+      <h2>お問い合わせフォーム</h2>
+      <p>お問い合わせはこちらからお問い合わせください。</p>
+      <form action="xxx.php">
+        <table>
+          <tr>
+            <th>お名前：</th>
+            <td><input type="text" name="name" maxlength="20"><span></span></td>
+          </tr>
+          <tr>
+            <th>E-mail：</th>
+            <td><input type="text" mail="name" maxlength="20"><span></span></td>
+          </tr>
+          <tr>
+            <th>お問い合わせ内容：</th>
+            <td><textarea name="any" cols="20"></textarea><span></span></td>
+          </tr>
+          <tr>
+            <th></th>
+            <td><input type="submit" value="送信"></ td>
+          </tr>
+        </table>
+      </form>
+    </section>
+    </nav>
+</main>
+<aside id="access">
+  <h2>「Shibu Cafe」へのアクセス</h2>
+  <section>
+    <p>渋谷駅から道玄坂を登り、5分程です。</p>
+
+    <p>〒150-0043　東京都渋谷区道玄坂×××-××Shibu Cafe</p>
+    <p>TEL : 000-00-0000</p>
+    <p>営業時間 : 7:30～24:00</p>
+  </section>
+  <div class="access">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6483.503849934608!2d139.69458897525195!3d35.65848318806274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b562ec4d62f%3A0x1bcc5680aa0a44e2!2z44CSMTUwLTAwNDMg5p2x5Lqs6YO95riL6LC35Yy66YGT546E5Z2C!5e0!3m2!1sja!2sjp!4v1498566552224"
+      width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+</aside>
+<footer>
+
+  <small>&copy;2017 Shibu Cafe</small>
+</footer>
+
+<div id="gototop"><a href="#top">^</a></div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script>
+// 「上にもどるボタン」
+ $('#gototop').click(function(){
+   $('body,html').animate({scrollTop:0}, 500);
+   return false; //こちらを挿入すると、フェードアウト時に二度ボタンが表示されなくなります。
+ });
+
+ $('#gototop').css('display','none');
+ $(window).scroll(function(){
+     if($(window).scrollTop() > 100) {
+       $('#gototop').fadeIn();
+     }else{
+       $('#gototop').fadeOut();
+     }
+ });
+
+ $('#open').click(function(){
+       $('#drawer ul').toggleClass('showMenue');
+     });
+     $('#drawer ul li').click(function(){
+       $('#drawer ul').toggleClass('showMenue');
+     });
+
+ </script>
+</body>
+</html>
